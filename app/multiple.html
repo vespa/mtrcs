@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ad Detection</title>
+  <style>
+    body {
+      height: 2000px;
+      width: 2500px;
+    }
+    #ad {
+      width: 300px;
+      height: 250px;
+      background: #ee7202;
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+    #ad2 {
+      width: 300px;
+      height: 250px;
+      background: #ee7202;
+      position: absolute;
+      left: 400px;
+      top: 400px;
+    }
+    .ads{
+
+    }
+  </style>
+</head>
+<body>
+  <div style="position:fixed; top:0 background-color:#fff; opacity:.7">
+    You can select multiple targets with the same class. Or declare every ID individually
+  </div>
+<div id="ad">
+  ADVERTISEMENT
+</div>
+
+<div id="ad2">
+  ADVERTISEMENT 2
+</div>
+</body>
+<script src="script.js"></script>
+<script>
+
+adMonitor.add("#ad","#ad2", "not_found");
+</script>
+</html>
