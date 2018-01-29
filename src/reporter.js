@@ -22,17 +22,17 @@ var reports = (function(window, addEvents, adMonitor, windowMonitor, chainer){
         return {
             "Identifier": item.identifier,
             "Ad is viewable" : item.adIsViewable,
-            "Active User"                   : windowMonitor.status("viewable"),
+            "Active user"                   : windowMonitor.status("viewable"),
             "Viewability time of the ad in sec": timer,
-            "Area"                          : item.area + "px²",
+            "Area"                          : item.area + "px\u00B2",
             "Width"                         : item.width + "px",
             "Height"                        : item.height + "px",
-            "Total visible area"            : item.visibleArea+ "px²",
-            "Visible Horizontal"            : item.visibleHorizontal+ "px",
+            "Total visible area"            : item.visibleArea+ "px\u00B2",
+            "Visible horizontal"            : item.visibleHorizontal+ "px",
             "Visible vertical"              : item.visibleVertical+ "px",
-            "Percentage VisibleArea"        : item.percentageVisibleArea,
-            "Percentage Visible Horizontal" : item.percentageVisibleHorizontal,
-            "Percentage Visible Vertical"   : item.percentageVisibleVertical,
+            "Percentage visible area"        : item.percentageVisibleArea,
+            "Percentage visible horizontal" : item.percentageVisibleHorizontal,
+            "Percentage visible vertical"   : item.percentageVisibleVertical,
             "Clicks"                        : item.clicks
         };
     };
